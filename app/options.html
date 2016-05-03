@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- build:css styles/options-vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-multiselect/dist/css/bootstrap-multiselect.css" />
+    <link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body class="options">
+    <form>
+      <div class="panel panel-default">
+        <div class="panel-heading">Project info</div>
+        <div class="panel-body container-fluid">
+
+          <h4>Type</h4>
+          <div class="row">
+            <div class="col-lg-6 col-xs-6">
+              <div class="checkbox">
+                <label><input type="checkbox" id="fixedPrice" name="fixedPrice"/> Fixed price </label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" id="hourly" name="hourly"/> Hourly </label>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xs-6">
+              <div class="row">
+                <div class="col-lg-6 col-xs-6">
+                  <div class="input-group">
+                    <span class="input-group-addon">min $</span>
+                    <input type="text" class="form-control" id="budgetMin"  name="budgetMin" placeholder="0">
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xs-6">
+                  <div class="input-group">
+                    <span class="input-group-addon">max $</span>
+                    <input type="text" class="form-control" id="budgetMax"  name="budgetMax" placeholder="0">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4>Contain phrases (through comma)</h4>
+          <label class="label _textarea" for="phrasesContain">
+            <textarea class="textarea" id="phrasesContain" name="phrasesContain"></textarea>
+          </label>
+
+          <h4>Exclude phrases (through comma)</h4>
+          <label class="label _textarea" for="phrasesExclude">
+            <textarea class="textarea" id="phrasesExclude" name="phrasesExclude"></textarea>
+          </label>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Client info</h3>
+        </div>
+        <div class="panel-body">
+          <div class="checkbox">
+            <label><input type="checkbox" id="clientNew" name="clientNew"/> Consider  new (less then 1 month registered) </label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" id="paymentVerified" name="paymentVerified"/> Payment verified </label>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-xs-6">
+              <h4 class="panel-title">Include countries</h4>
+              <select id="selectInclude" multiple="multiple" name="selectInclude"></select>
+            </div>
+            <div class="col-lg-6 col-xs-6">
+              <h4 class="panel-title">Exclude countries</h4>
+              <select id="selectExclude" multiple="multiple" name="selectExclude"></select>
+            </div>
+          </div>
+          <br>
+          <div>
+            <h4 class="panel-title">Min feedback stars</h4>
+            <div class="row">
+              <div class="col-lg-6 col-xs-6">
+                <label for="feedbackStars">
+                  <input id="feedbackStars"
+                         name="feedbackStars"
+                         data-slider-id='ex1Slider'
+                         type="text"
+                         data-slider-min="0"
+                         data-slider-max="5"
+                         data-slider-step="0.5"
+                         data-slider-value="0"/>
+                </label>
+              </div>
+              <div class="col-lg-6 col-xs-6">
+                <span class="stars-amount">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="btn-group pull-right">
+        <button type="button" class="btn btn-default" id="buttonClear">
+          Clear
+        </button>
+        <button type="submit" class="btn btn-success" id="buttonSave">
+          Save
+        </button>
+      </div>
+      <br>
+      <br>
+      <br>
+    </form>
+    <!-- build:js scripts/options-vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
+    <script src="bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/options.js -->
+    <script src="scripts/options.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

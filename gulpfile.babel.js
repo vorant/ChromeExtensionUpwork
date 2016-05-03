@@ -1,7 +1,10 @@
-// generated on 2016-05-03 using generator-chrome-extension 0.5.6
+// generated on 2016-04-05 using generator-chrome-extension 0.5.6
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import del from 'del';
+import browserify from 'browserify';
+import source from 'vinyl-source-stream';
+
 import runSequence from 'run-sequence';
 import {stream as wiredep} from 'wiredep';
 
@@ -54,7 +57,7 @@ gulp.task('html',  () => {
   return gulp.src('app/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
     .pipe($.sourcemaps.init())
-    .pipe($.if('*.js', $.uglify()))
+    // .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.cleanCss({compatibility: '*'})))
     .pipe($.sourcemaps.write())
     .pipe($.if('*.html', $.htmlmin({removeComments: true, collapseWhitespace: true})))
@@ -74,7 +77,7 @@ gulp.task('chromeManifest', () => {
   }))
   .pipe($.if('*.css', $.cleanCss({compatibility: '*'})))
   .pipe($.if('*.js', $.sourcemaps.init()))
-  .pipe($.if('*.js', $.uglify()))
+  // .pipe($.if('*.js', $.uglify()))
   .pipe($.if('*.js', $.sourcemaps.write('.')))
   .pipe(gulp.dest('dist'));
 });
@@ -87,9 +90,50 @@ gulp.task('babel', () => {
       .pipe(gulp.dest('app/scripts'));
 });
 
+gulp.task('browserify', cb => {
+  runSequence(
+    'babel',
+    ['browserify.background','browserify.options','browserify.popup'],
+    cb
+  )
+});
+
+gulp.task('browserify.background', () => {
+  return browserify(
+    {
+      entries: 'app/scripts/background.js',
+      debug: true
+    })
+    .bundle()
+    .pipe(source('background.js'))
+    .pipe(gulp.dest('app/scripts'));
+});
+
+gulp.task('browserify.options', () => {
+  return browserify(
+    {
+      entries: 'app/scripts/options.js',
+      debug: true
+    })
+    .bundle()
+    .pipe(source('options.js'))
+    .pipe(gulp.dest('app/scripts'));
+});
+
+gulp.task('browserify.popup', () => {
+  return browserify(
+    {
+      entries: 'app/scripts/popup.js',
+      debug: true
+    })
+    .bundle()
+    .pipe(source('popup.js'))
+    .pipe(gulp.dest('app/scripts'));
+});
+
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('watch', ['lint', 'babel', 'html'], () => {
+gulp.task('watch', ['lint', 'browserify', 'html'], () => {
   $.livereload.listen();
 
   gulp.watch([
@@ -100,7 +144,7 @@ gulp.task('watch', ['lint', 'babel', 'html'], () => {
     'app/_locales/**/*.json'
   ]).on('change', $.livereload.reload);
 
-  gulp.watch('app/scripts.babel/**/*.js', ['lint', 'babel']);
+  gulp.watch('app/scripts.babel/**/*.js', ['lint', 'browserify']);
   gulp.watch('bower.json', ['wiredep']);
 });
 

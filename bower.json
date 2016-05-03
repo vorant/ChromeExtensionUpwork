@@ -2,7 +2,21 @@
   "name": "new-fucking-extension",
   "private": true,
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "~2.2.2",
+    "bootstrap": "~3.3.6",
+    "bootstrap-multiselect": "~0.9.13",
+    "seiyria-bootstrap-slider": "~7.0.1"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.min.css",
+        "dist/css/bootstrap.theme.min.css"
+      ]
+    }
+  },
   "devDependencies": {
     "chai": "~3.5.0",
     "mocha": "~2.4.5"

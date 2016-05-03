@@ -1,25 +1,55 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <!-- build:css styles/popup-vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css styles/main.css -->
-    <link href="styles/main.css" rel="stylesheet">
-    <!-- endbuild -->
-  </head>
-  <body>
-    <h1>'Allo, 'Allo!</h1>
+<head>
+  <meta charset="utf-8">
+  <!-- build:css styles/popup-vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap-multiselect/dist/css/bootstrap-multiselect.css" />
+  <link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css styles/main.css -->
+  <link href="styles/main.css" rel="stylesheet">
+  <!-- endbuild -->
 
-    <!-- build:js scripts/popup-vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
+  <!-- build:js scripts/popup-vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
+  <script src="bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+</head>
+<body>
+<h3>Projects List</h3>
+<div class="authorization"></div>
 
-    <!-- build:js scripts/popup.js -->
-    <script src="scripts/popup.js"></script>
-    <!-- endbuild -->
-  </body>
+<div class="work-mode">
+  <div class="work-mode__label-wrapper _switch-on">
+    <label class="work-mode__label ">
+      <input type="radio" name="workMode" value="ON">
+      ON
+    </label>
+
+  </div>
+  <div class="work-mode__label-wrapper _switch-off">
+    <label class="work-mode__label">
+      <input type="radio" name="workMode" value="OFF">
+      OFF
+    </label>
+  </div>
+</div>
+
+<div class="job-list__wrapper">
+  <ul class="job-list"></ul>
+</div>
+
+
+
+<!-- build:js scripts/popup.js -->
+<script src="scripts/popup.js"></script>
+<!-- endbuild -->
+</body>
 </html>

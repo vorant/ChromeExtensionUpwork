@@ -1,9 +1,20 @@
 'use strict';
 
-chrome.runtime.onInstalled.addListener(details => {
-  console.log('previousVersion', details.previousVersion);
+import Launcher from './background/launcher';
+import WorkMode from './models/workMode.model';
+
+let launcher = new Launcher();
+
+if (WorkMode.get()) { // start launcher when browser begins to work
+  launcher.start();
+}
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  if (request.message == 'switch-on') {
+    launcher.start();
+  }
+  if (request.message == 'switch-off') {
+    launcher.stop();
+  }
 });
 
-chrome.browserAction.setBadgeText({text: '\'Allo'});
-
-console.log('\'Allo \'Allo! Event Page for Browser Action');
