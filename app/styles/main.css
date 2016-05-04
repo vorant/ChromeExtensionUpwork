@@ -34,6 +34,9 @@ body {
   border-bottom: 1px solid black;
   height: 30px;
 }
+.job-list__job._new {
+  background: teal;  
+}
 
 .job-list__job-link {
   line-height: 30px;
@@ -43,6 +46,10 @@ body {
   display: block;
 
 }
+.job-list__job._new .job-list__job-link{
+  color: beige;
+}
+
 .job-list__wrapper {
   width: 300px;
   height: 400px;
