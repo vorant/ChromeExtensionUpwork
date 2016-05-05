@@ -53,6 +53,11 @@ gulp.task('images', () => {
     .pipe(gulp.dest('dist/images'));
 });
 
+gulp.task('sounds', () => {
+  return gulp.src('app/sound/**/*')
+    .pipe(gulp.dest('dist/sound'));
+});
+
 gulp.task('html',  () => {
   return gulp.src('app/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
@@ -169,8 +174,8 @@ gulp.task('package', function () {
 
 gulp.task('build', (cb) => {
   runSequence(
-    'lint', 'babel', 'chromeManifest',
-    ['html', 'images', 'extras'],
+    'lint', 'browserify', 'chromeManifest',
+    ['html', 'images', 'extras', 'sounds'],
     'size', cb);
 });
 
