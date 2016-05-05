@@ -6,7 +6,8 @@
     "jquery": "~2.2.2",
     "bootstrap": "~3.3.6",
     "bootstrap-multiselect": "~0.9.13",
-    "seiyria-bootstrap-slider": "~7.0.1"
+    "seiyria-bootstrap-slider": "~7.0.1",
+    "materialize": "~0.97.6"
   },
   "overrides": {
     "bootstrap": {

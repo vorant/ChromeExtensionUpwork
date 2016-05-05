@@ -4,8 +4,8 @@
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "icons": {
-    "16": "images/icon-16.png",
-    "128": "images/icon-128.png"
+    "16": "images/up16.png",
+    "128": "images/up128.png"
   },
   "default_locale": "en",
   "background": {
@@ -26,8 +26,8 @@
   },
   "browser_action": {
     "default_icon": {
-      "19": "images/icon-19.png",
-      "38": "images/icon-38.png"
+      "19": "images/up19.png",
+      "38": "images/up38.png"
     },
     "default_title": "new_fucking_extension",
     "default_popup": "popup.html"

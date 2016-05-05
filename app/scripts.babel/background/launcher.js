@@ -15,6 +15,7 @@ class Launcher {
   work(){
     getJobs()
       .then(jobs => jobs.map(check))
+      .then(jobs => { jobs.forEach(job => console.log(job)); return jobs})
       .then(jobs => jobs.filter(job => job.suitable))
       .then(jobs => jobs.map(job => job.project))
       .then(jobs => jobs.reverse())

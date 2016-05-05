@@ -7,15 +7,13 @@ let projectModel = new Projects();
 let workMode = WorkMode.get();
 
 function getItemHTML(project) {
-  let modifier = project.isNew ? '_new' : '';
-  return `<li class="job-list__job ${modifier}">
-      <a href="https://www.upwork.com/jobs/_${project.ciphertext}"
-         target="_blank"
-         class="job-list__job-link"
-         data-projectId="${project[projectModel.idField]}">
-         ${project.title}
-      </a>
-    </li>`;
+  let modifier = project.isNew ? 'active' : '';
+  return `<a href="https://www.upwork.com/jobs/_${project.ciphertext}"
+              data-projectId="${project[projectModel.idField]}"
+              target="_blank"
+              class="collection-item ${modifier}">
+              ${project.title}
+          </a>`;
 }
 
 function fillList() {
@@ -23,28 +21,24 @@ function fillList() {
   projectModel.projects.forEach(project => {
     html += getItemHTML(project);
   });
-  $('.job-list').html(html); 
+  $('.collection').html(html);
 }
 
 function addWorkModeListeners() {
  
-  $('._switch-on').off().on('click', () => {
-    !workMode ? handler('switch-on') : '';
-  });
+  $('.work-mode__label').on('click', debounce(handler, 10));
 
-  $('._switch-off').off().on('click', (evt) => {
-    workMode ? handler('switch-off') : '';
-  });
 
-  function handler(message) {
+  function handler() {
     workMode = !workMode;
     WorkMode.save(workMode);
+    let message = workMode ? 'switch-on' : 'switch-off';
     chrome.runtime.sendMessage({message: message});
   }
 }
 
 function addJobListener() {
-  $('.job-list__job-link').on('click', function(evt) {
+  $('.collection-item').on('click', function(evt) {
     let projectId = $(this).attr('data-projectId');
     projectModel.projects = projectModel.projects.map(project => {
       if (project[projectModel.idField] == projectId) {
@@ -68,8 +62,10 @@ function checkAuthorization() {
 }
 
 function checkMode() {
-  let inputClass = workMode ? '_switch-on' : '_switch-off'; 
-  $(`.${inputClass}`).find('input').attr('checked','checked');
+  
+  if (workMode) {
+    $(`.work-mode__input`).attr('checked','checked');
+  }
 }
 
 $(document).ready(function () {
@@ -79,3 +75,16 @@ $(document).ready(function () {
   checkMode();
   checkAuthorization();
 });
+
+function debounce(fn, time = 1){
+  let busy = false;
+  return function(){
+    if (!busy) {
+      busy = true;
+      setTimeout(function () {
+        fn();
+        busy = false;
+      }, time);
+    }
+  }
+}

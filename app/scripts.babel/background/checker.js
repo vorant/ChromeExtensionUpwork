@@ -39,8 +39,8 @@ function getOptionType(options) {
     */
    checkProjectType(){
      let answer = false;
-     let projectType = this.project.type == 2 ? 'hourly' : 'fixed';
-     let optionType = getOptionType(this.options);
+     let projectType = this.project.type == 2 ? 'hourly' : 'fixedPrice';
+     let optionType = this.options.type;
 
      if (optionType == 'any' || optionType == projectType) {
        answer = true;
@@ -59,13 +59,13 @@ function getOptionType(options) {
    checkBudget(){
      let answer = true;
 
-     let projectType = this.project.type == 2 ? 'hourly' : 'fixed';
+     let projectType = this.project.type == 2 ? 'hourly' : 'fixedPrice';
      
-     if (projectType != 'hourly') {
+     if (projectType == 'fixedPrice') {
        let projectBudget = parseInt(this.project.amount.amount, 10);
 
-       let budgetMin = parseInt(this.options.budgetMin, 10);
-       let budgetMax = parseInt(this.options.budgetMax, 10);
+       let budgetMin = parseInt(this.options.budgetMin, 10) || false;
+       let budgetMax = parseInt(this.options.budgetMax, 10) || false;
 
        if (budgetMin && (budgetMin >= projectBudget)) {
          answer = false;
@@ -125,7 +125,7 @@ function getOptionType(options) {
    checkPaymentVerification(){
      let answer = false;
      let clientVerificationStatus =  parseInt(this.project.client.paymentVerificationStatus, 10) === 5 ? 'verified' : 'not verified';
-     let optionsVerificationStatus =  this.options.paymentVerified === 'on' ? 'verified' : 'any';
+     let optionsVerificationStatus =  this.options.paymentVerified;
 
      if (optionsVerificationStatus === 'any' || clientVerificationStatus === optionsVerificationStatus) {
        answer = true;
@@ -145,17 +145,7 @@ function getOptionType(options) {
      let answer = true;
      let clientCountry = this.project.client.location.country;
 
-     if (this.options.selectInclude) {
-       answer = isCountryInCountries(this.options.selectInclude, clientCountry);
-       if (!answer) {
-         this.reason.push(
-           `Не подходит по стране. Клиент из ${clientCountry}, 
-           белый список ${this.options.selectInclude} `
-         );
-       }
-     }
-
-     if (!this.options.selectInclude && this.options.selectExclude) {
+     if (this.options.selectExclude) {
        answer = !isCountryInCountries(this.options.selectExclude, clientCountry);
        if (!answer) {
          this.reason.push(

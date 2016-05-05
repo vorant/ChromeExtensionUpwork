@@ -3,61 +3,178 @@
   <head>
     <!-- build:css styles/options-vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="bower_components/bootstrap-multiselect/dist/css/bootstrap-multiselect.css" />
-    <link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css" />
+    <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css" />
+    <link rel="stylesheet" href="bower_components/materialize/extras/noUiSlider/nouislider.css" />
+
+    <!--<link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css" />-->
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css styles/main.css -->
     <link href="styles/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- endbuild -->
   </head>
   <body class="options">
     <form>
-      <div class="panel panel-default">
-        <div class="panel-heading">Project info</div>
-        <div class="panel-body container-fluid">
+      <h5>
+        Project info
+        <i class="tiny material-icons tooltipped"
+           data-position="right"
+           data-delay="50"
+           data-tooltip="Leave fields empty if it doesn't matter">info_outline</i>
+      </h5>
 
-          <h4>Type</h4>
-          <div class="row">
-            <div class="col-lg-6 col-xs-6">
-              <div class="checkbox">
-                <label><input type="checkbox" id="fixedPrice" name="fixedPrice"/> Fixed price </label>
+      <ul class="collapsible" data-collapsible="expandable">
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">query_builder</i>Type
+          </div>
+          <div class="collapsible-body">
+            <div class="row options__row">
+              <div class="input-field col s3 options__col">
+                <input class="with-gap" name="type" type="radio" id="type_any" value="any" checked/>
+                <label for="type_any">Any</label>
               </div>
-              <div class="checkbox">
-                <label><input type="checkbox" id="hourly" name="hourly"/> Hourly </label>
+              <div class="input-field col s3 options__col">
+                <input class="with-gap" name="type" type="radio" id="type_hourly" value="hourly"/>
+                <label for="type_hourly">Hourly</label>
               </div>
-            </div>
-            <div class="col-lg-6 col-xs-6">
-              <div class="row">
-                <div class="col-lg-6 col-xs-6">
-                  <div class="input-group">
-                    <span class="input-group-addon">min $</span>
-                    <input type="text" class="form-control" id="budgetMin"  name="budgetMin" placeholder="0">
-                  </div>
-                </div>
-                <div class="col-lg-6 col-xs-6">
-                  <div class="input-group">
-                    <span class="input-group-addon">max $</span>
-                    <input type="text" class="form-control" id="budgetMax"  name="budgetMax" placeholder="0">
-                  </div>
-                </div>
+              <div class="input-field col s3 options__col">
+                <input class="with-gap" name="type" type="radio" id="type_fixed" value="fixedPrice"/>
+                <label for="type_fixed">Fixed Prise</label>
               </div>
             </div>
           </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">$</i>Budget (only for Fixed prise)
+          </div>
+          <div class="collapsible-body">
 
-          <h4>Contain phrases (through comma)</h4>
-          <label class="label _textarea" for="phrasesContain">
-            <textarea class="textarea" id="phrasesContain" name="phrasesContain"></textarea>
-          </label>
+            <div class="row options__row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">$</i>
+                <input id="budgetMin" type="text" class="validate" name="budgetMin">
+                <label for="budgetMin">min</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">$</i>
+                <input id="budgetMax" type="tel" class="validate" name="budgetMax">
+                <label for="budgetMax">max</label>
+              </div>
+            </div>
 
-          <h4>Exclude phrases (through comma)</h4>
-          <label class="label _textarea" for="phrasesExclude">
-            <textarea class="textarea" id="phrasesExclude" name="phrasesExclude"></textarea>
-          </label>
-        </div>
-      </div>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">list</i>Contain phrases
+          </div>
+          <div class="collapsible-body">
+            <div class="row options__row">
+              <div class="input-field col s12">
+                <textarea id="phrasesContain" class="materialize-textarea" name="phrasesContain"></textarea>
+                <label for="phrasesContain">Type through comma</label>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">not_interested</i>Exclude phrases
+          </div>
+          <div class="collapsible-body">
+            <div class="row options__row">
+              <div class="input-field col s12">
+                <textarea id="phrasesExclude" class="materialize-textarea"name="phrasesExclude"></textarea>
+                <label for="phrasesExclude">Type through comma</label>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
 
+      <h5>
+        Client info
+        <i class="tiny material-icons tooltipped"
+           data-position="right"
+           data-delay="50"
+           data-tooltip="Leave fields empty if it doesn't matter">info_outline</i>
+      </h5>
+      <ul class="collapsible" data-collapsible="expandable">
+<!--        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">perm_identity</i>Consider  new (less then 1 month registered)
+          </div>
+          <div class="collapsible-body">
+            <div class="row options__row">
+              <div class="input-field col s3 options__col">
+                <input class="with-gap" name="clientNew" type="radio" id="clientNew_any" value="any" checked/>
+                <label for="clientNew_any">Any</label>
+              </div>
+              <div class="input-field col s3 options__col">
+                <input class="with-gap" name="clientNew" type="radio" id="clientNew_yes" value="yes"/>
+                <label for="clientNew_yes">Yes</label>
+              </div>
+              <div class="input-field col s3 options__col">
+                <input class="with-gap" name="clientNew" type="radio" id="clientNew_no" value="no"/>
+                <label for="clientNew_no">No</label>
+              </div>
+            </div>
+          </div>
+        </li>-->
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">done_all</i>Payment verified
+          </div>
+          <div class="collapsible-body">
+            <div class="row options__row">
+              <div class="input-field col s3 options__col">
+                <input class="with-gap" name="paymentVerified" type="radio" id="paymentVerified_any" value="any" checked/>
+                <label for="paymentVerified_any">Any</label>
+              </div>
+              <div class="input-field col s3 options__col">
+                <input class="with-gap" name="paymentVerified" type="radio" id="paymentVerified_yes" value="yes"/>
+                <label for="paymentVerified_yes">Yes</label>
+              </div>
+              <div class="input-field col s3 options__col">
+                <input class="with-gap" name="paymentVerified" type="radio" id="paymentVerified_no" value="no"/>
+                <label for="paymentVerified_no">No</label>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">location_off</i>Countries Black List
+          </div>
+          <div class="collapsible-body">
+            <div class="options__select-wrapper">
+              <div class="input-field col s12">
+                <select multiple id="selectExclude" name="selectExclude"></select>
+              </div>
+            </div>
+
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">star_rate</i>Feedback stars
+          </div>
+          <div class="collapsible-body">
+
+            <div class="options__slider-wrapper">
+              <input type="text" id="feedbackStars" name="feedbackStars" class="options__slider-input"/>
+              <div class="sliders" id="feedbackSlider"></div>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+
+
+<!--
       <div class="panel panel-default">
         <div class="panel-heading">
           <h3 class="panel-title">Client info</h3>
@@ -103,13 +220,11 @@
           </div>
         </div>
       </div>
+-->
 
 
-      <div class="btn-group pull-right">
-        <button type="button" class="btn btn-default" id="buttonClear">
-          Clear
-        </button>
-        <button type="submit" class="btn btn-success" id="buttonSave">
+      <div class="right">
+        <button type="submit" class="waves-effect waves-light btn" id="buttonSave">
           Save
         </button>
       </div>
@@ -119,10 +234,12 @@
     </form>
     <!-- build:js scripts/options-vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
-    <script src="bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+    <script src="bower_components/materialize/extras/noUiSlider/nouislider.min.js"></script>
+    <!--<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>-->
+    <!--<script src="bower_components/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>-->
+    <!--<script src="bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.js"></script>-->
     <!-- endbower -->
     <!-- endbuild -->
 

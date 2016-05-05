@@ -1,5 +1,14 @@
-body {
+._upcolor {
+  color: #22e742 !important;
+}
+._upbg {
+  background: #22e742 !important;
+}
+.popup {
   padding: 20px;
+  /*height: 700px;*/
+  width: 400px;
+  overflow: hidden;
 }
 
 .options {
@@ -20,52 +29,10 @@ body {
   background: #BABABA;
 }
 
-
-.job-list {
-  width: 300px;
-  padding: 0;
-  margin: 0;
-}
-
-.job-list__job {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-bottom: 1px solid black;
-  height: 30px;
-}
-.job-list__job._new {
-  background: teal;  
-}
-
-.job-list__job-link {
-  line-height: 30px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
-
-}
-.job-list__job._new .job-list__job-link{
-  color: beige;
-}
-
-.job-list__wrapper {
-  width: 300px;
-  height: 400px;
-  overflow-x: hidden;
-}
-.work-mode__label-wrapper  {
-  display: inline-block;
-  width: 50px;
-}
-.work-mode__label {
-  cursor: pointer;
-}
 .authorization {
-  position: absolute;
-  right: 20px;
-  top: 20px;
+  /*position: absolute;*/
+  /*right: 20px;*/
+  /*top: 20px;*/
   font-weight: 700;
 }
 ._authorized {
@@ -74,3 +41,59 @@ body {
 ._not-authorized {
   color: red;
 }
+
+.work-mode {
+
+}
+  .work-mode__title {
+    display: inline-block;
+    width: 100px;
+    font-size: 18px;
+  }
+  .work-mode__switcher {
+    display: inline-block;
+    width: 170px;
+  }
+
+.projects {
+  overflow: auto;
+  height: 420px;
+  padding-bottom: 20px;
+}
+
+.options {
+  padding: 20px;
+}
+  .options__row {
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  .options__col {
+    margin-top: 0;
+    height: 40px;
+  }
+  .option__switcher {
+    width: 150px;
+    display: inline;
+    float: right;
+  }
+
+  .options__slider-input {
+    position: absolute;
+    left: -9999px;
+  }
+  .options__slider-wrapper {
+    position: relative;
+    top: 10px;
+    padding: 0 20px;
+    height: 40px;
+  }
+  .options__select-wrapper {
+    height: 50px;
+    padding: 0 20px;
+  }
+
+  .btn,
+  .btn:hover {
+    background-image: none !important;
+  }

@@ -25,22 +25,28 @@ class Form {
     ids.forEach(id => $(`#${id}`).html(options));
   }
 
-  enableMultiSelects(ids) {
-    var params = {
-      enableFiltering: true,
-      filterBehavior: 'value'
-    };
-    ids.forEach(id => $(`#${id}`).multiselect(params));
+  enableMultiSelects() {
+    $('select').material_select();
   }
 
   enableSlider(params) {
-    function setText(slideEvt) {
-      $(`.${params.textClass}`).text(slideEvt.value);
-    }
-    let el = $(`#${params.sliderId}`);
+    let el = $(`#${params.inputId}`);
     
-    el.slider().on('slide', setText);
-    setText({value: el.val()});
+    let slider2 = document.getElementById(params.sliderId);
+    let value = el.val() || 0;
+    
+    noUiSlider.create(slider2, {
+      start: value,
+      animate: false,
+      range: {
+        min: 0,
+        max: 5
+      }
+    });
+
+    slider2.noUiSlider.on('update', function( values, handle ){
+      el.val(values[handle]);
+    });
   }
 
   saveData(str) {
@@ -71,9 +77,6 @@ class Form {
           break;
         default:
           $el.val(value);
-          if (name == 'feedbackStars') {
-            $el.attr('data-slider-value', value);
-          } 
       }
     }
   }

@@ -4,6 +4,7 @@ let form = new Form();
 
 
 
+
 $(document).ready(function() {
   // var data = form.getData();
   // $.parseJSON( )
@@ -12,8 +13,8 @@ $(document).ready(function() {
   
   form.fillMultiSelects(['selectInclude', 'selectExclude']);
   form.fill();
-  form.enableSlider({sliderId:'feedbackStars', textClass:'stars-amount'});
-  form.enableMultiSelects(['selectInclude', 'selectExclude']);
+  form.enableSlider({sliderId:'feedbackSlider', inputId:'feedbackStars'});
+  form.enableMultiSelects();
 });
 
 // $('#buttonSave').on('click', e => {
@@ -21,10 +22,11 @@ $(document).ready(function() {
 // })
 
 $( 'form' ).on('submit', function( event ) {
-
   event.preventDefault();
   let str = $(this).serialize();
-  form.saveData(str)
+  
+  form.saveData(str);
+  window.close();
 });
 
 function saveForm() {

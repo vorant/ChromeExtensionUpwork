@@ -4,49 +4,49 @@
   <meta charset="utf-8">
   <!-- build:css styles/popup-vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="bower_components/bootstrap-multiselect/dist/css/bootstrap-multiselect.css" />
-  <link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css" />
+  <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css styles/main.css -->
   <link href="styles/main.css" rel="stylesheet">
   <!-- endbuild -->
 
-  <!-- build:js scripts/popup-vendor.js -->
-  <!-- bower:js -->
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="bower_components/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
-  <script src="bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
+
 </head>
-<body>
-<h3>Projects List</h3>
-<div class="authorization"></div>
+<body class="popup">
+<div>
+  <!--<h5 class="center-align">Work mode</h5>-->
+</div>
 
-<div class="work-mode">
-  <div class="work-mode__label-wrapper _switch-on">
-    <label class="work-mode__label ">
-      <input type="radio" name="workMode" value="ON">
-      ON
-    </label>
-
+<div class="row">
+  <div class="col s6">
+    <div class="work-mode__title"><h6 class="authorization"></h6></div>
   </div>
-  <div class="work-mode__label-wrapper _switch-off">
-    <label class="work-mode__label">
-      <input type="radio" name="workMode" value="OFF">
-      OFF
-    </label>
+  <div class="col s6">
+    <div class="switch">
+      <label class="work-mode__label">
+        Off
+        <input type="checkbox" name="workmode" class="work-mode__input">
+        <span class="lever"></span>
+        On
+      </label>
+    </div>
   </div>
 </div>
 
-<div class="job-list__wrapper">
-  <ul class="job-list"></ul>
+<div>
+  <h5 class="center-align">Projects List</h5>
+</div>
+<div class="projects">
+  <div class="collection"></div>
 </div>
 
-
+<!-- build:js scripts/popup-vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
 <!-- build:js scripts/popup.js -->
 <script src="scripts/popup.js"></script>
