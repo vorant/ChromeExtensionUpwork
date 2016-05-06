@@ -5,33 +5,33 @@ const _storageField = 'form';
 class Options {
   constructor() {}
 
-  static save(str) {
-    localStorage[_storageField] = str;
+  static save(data) {
+    localStorage[_storageField] = JSON.stringify(data);
   }
 
   static get() {
     let str = localStorage[_storageField] || '';
-    let data = {};
-    str
-      .split('&')
-      .forEach(el => {
-        let arr = el.split('=');
+    let options = {};
+    let data = [];
 
-        let name = arr[0];
-        let val = arr[1];
-
-        if (data[name]) {
-          if (Array.isArray(data[name])) {
-            data[name].push(val);
+    try {
+      data = JSON.parse(str);
+    } catch (e) {
+      throw new Error(`JSON parse error ${e}`);
+    }
+    data.forEach(option => {
+        if (options[option.name]) {
+          if (Array.isArray(options[option.name])) {
+            options[option.name].push(option.value);
           } else {
-            data[name] = [data[name], val]
+            options[option.name] = [options[option.name], option.value]
           }
-
+    
         } else {
-          data[name] = val;
+          options[option.name] = option.value;
         }
-      });
-    return data;
+    });
+    return options;
   }
 
 }

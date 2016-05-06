@@ -17,45 +17,58 @@
     <!-- endbuild -->
   </head>
   <body class="options">
+
     <form>
       <h5>
         Project info
-        <i class="tiny material-icons tooltipped"
-           data-position="right"
-           data-delay="50"
-           data-tooltip="Leave fields empty if it doesn't matter">info_outline</i>
+        <!--<i class="tiny material-icons tooltipped"-->
+           <!--data-position="right"-->
+           <!--data-delay="50"-->
+           <!--data-tooltip="Leave fields empty if it doesn't matter">info_outline</i>-->
       </h5>
 
       <ul class="collapsible" data-collapsible="expandable">
         <li>
-          <div class="collapsible-header">
-            <i class="material-icons">query_builder</i>Type
-          </div>
-          <div class="collapsible-body">
-            <div class="row options__row">
-              <div class="input-field col s3 options__col">
-                <input class="with-gap" name="type" type="radio" id="type_any" value="any" checked/>
-                <label for="type_any">Any</label>
-              </div>
-              <div class="input-field col s3 options__col">
-                <input class="with-gap" name="type" type="radio" id="type_hourly" value="hourly"/>
-                <label for="type_hourly">Hourly</label>
-              </div>
-              <div class="input-field col s3 options__col">
-                <input class="with-gap" name="type" type="radio" id="type_fixed" value="fixedPrice"/>
-                <label for="type_fixed">Fixed Prise</label>
+          <div class="collapsible-header options__wrapper">
+            <div class="options__label">
+              <i class="material-icons">query_builder</i>Type
+
+            </div>
+            <div class="options__field">
+              <div class="row options__row options__radio-wrapper">
+                <div class="input-field col s3 options__col">
+                  <input class="with-gap" name="type" type="radio" id="type_any" value="any" checked/>
+                  <label for="type_any">Any</label>
+                </div>
+                <div class="input-field col s4 options__col">
+                  <input class="with-gap" name="type" type="radio" id="type_hourly" value="hourly"/>
+                  <label for="type_hourly">Hourly</label>
+                </div>
+                <div class="input-field col s5 options__col">
+                  <input class="with-gap" name="type" type="radio" id="type_fixed" value="fixedPrice"/>
+                  <label for="type_fixed">Fixed Prise</label>
+                </div>
               </div>
             </div>
           </div>
+          <!--<div class="collapsible-body"></div>-->
         </li>
         <li>
-          <div class="collapsible-header">
-            <i class="material-icons">$</i>Budget (only for Fixed prise)
+          <div class="collapsible-header options__wrapper">
+            <div class="options__label">
+              <i class="material-icons">$</i>Budget (only for Fixed prise)
+              <i class="options__helper material-icons tooltipped"
+                 data-position="right"
+                 data-delay="50"
+                 data-tooltip="Click for expand field">info_outline</i>
+            </div>
+            <div class="options__field">
+
+            </div>
           </div>
           <div class="collapsible-body">
-
-            <div class="row options__row">
-              <div class="input-field col s6">
+            <div class="row options__row options__inputs-wrapper">
+              <div class="input-field col s6 ">
                 <i class="material-icons prefix">$</i>
                 <input id="budgetMin" type="text" class="validate" name="budgetMin">
                 <label for="budgetMin">min</label>
@@ -66,12 +79,18 @@
                 <label for="budgetMax">max</label>
               </div>
             </div>
-
           </div>
         </li>
         <li>
           <div class="collapsible-header">
-            <i class="material-icons">list</i>Contain phrases
+            <div class="options__label">
+              <i class="material-icons">list</i>Contain phrases
+              <i class="options__helper material-icons tooltipped"
+                 data-position="right"
+                 data-delay="50"
+                 data-tooltip="Click for expand field">info_outline</i>
+            </div>
+
           </div>
           <div class="collapsible-body">
             <div class="row options__row">
@@ -84,7 +103,13 @@
         </li>
         <li>
           <div class="collapsible-header">
-            <i class="material-icons">not_interested</i>Exclude phrases
+            <div class="options__label">
+              <i class="material-icons">not_interested</i>Exclude phrases
+              <i class="options__helper material-icons tooltipped"
+                 data-position="right"
+                 data-delay="50"
+                 data-tooltip="Click for expand field">info_outline</i>
+            </div>
           </div>
           <div class="collapsible-body">
             <div class="row options__row">
@@ -97,12 +122,13 @@
         </li>
       </ul>
 
+      <br>
       <h5>
         Client info
-        <i class="tiny material-icons tooltipped"
-           data-position="right"
-           data-delay="50"
-           data-tooltip="Leave fields empty if it doesn't matter">info_outline</i>
+        <!--<i class="tiny material-icons tooltipped"-->
+           <!--data-position="right"-->
+           <!--data-delay="50"-->
+           <!--data-tooltip="Leave fields empty if it doesn't matter">info_outline</i>-->
       </h5>
       <ul class="collapsible" data-collapsible="expandable">
 <!--        <li>
@@ -127,102 +153,127 @@
           </div>
         </li>-->
         <li>
-          <div class="collapsible-header">
-            <i class="material-icons">done_all</i>Payment verified
-          </div>
-          <div class="collapsible-body">
-            <div class="row options__row">
-              <div class="input-field col s3 options__col">
-                <input class="with-gap" name="paymentVerified" type="radio" id="paymentVerified_any" value="any" checked/>
-                <label for="paymentVerified_any">Any</label>
-              </div>
-              <div class="input-field col s3 options__col">
-                <input class="with-gap" name="paymentVerified" type="radio" id="paymentVerified_yes" value="yes"/>
-                <label for="paymentVerified_yes">Yes</label>
-              </div>
-              <div class="input-field col s3 options__col">
-                <input class="with-gap" name="paymentVerified" type="radio" id="paymentVerified_no" value="no"/>
-                <label for="paymentVerified_no">No</label>
+          <div class="collapsible-header options__wrapper">
+            <div class="options__label">
+              <i class="material-icons">done_all</i>Payment verified
+            </div>
+            <div class="options__field">
+              <div class="row options__radio-wrapper">
+                <div class="input-field col s4 options__col">
+                  <input class="with-gap" name="paymentVerified" type="radio" id="paymentVerified_any" value="any" checked/>
+                  <label for="paymentVerified_any">Any</label>
+                </div>
+                <div class="input-field col s4 options__col">
+                  <input class="with-gap" name="paymentVerified" type="radio" id="paymentVerified_yes" value="yes"/>
+                  <label for="paymentVerified_yes">Yes</label>
+                </div>
+                <div class="input-field col s4 options__col">
+                  <input class="with-gap" name="paymentVerified" type="radio" id="paymentVerified_no" value="no"/>
+                  <label for="paymentVerified_no">No</label>
+                </div>
               </div>
             </div>
           </div>
+          <!--<div class="collapsible-body"></div>-->
         </li>
         <li>
-          <div class="collapsible-header">
-            <i class="material-icons">location_off</i>Countries Black List
-          </div>
-          <div class="collapsible-body">
-            <div class="options__select-wrapper">
-              <div class="input-field col s12">
-                <select multiple id="selectExclude" name="selectExclude"></select>
+          <div class="collapsible-header options__wrapper">
+            <div class="options__label">
+              <i class="material-icons">location_off</i>Countries Black List
+            </div>
+            <div class="options__field">
+              <div class="options__select-wrapper input-field">
+                  <select multiple id="selectExclude" name="selectExclude"></select>
               </div>
             </div>
-
           </div>
+          <!--<div class="collapsible-body"></div>-->
         </li>
         <li>
-          <div class="collapsible-header">
-            <i class="material-icons">star_rate</i>Feedback stars
-          </div>
-          <div class="collapsible-body">
-
-            <div class="options__slider-wrapper">
-              <input type="text" id="feedbackStars" name="feedbackStars" class="options__slider-input"/>
-              <div class="sliders" id="feedbackSlider"></div>
+          <div class="collapsible-header options__wrapper">
+            <div class="options__label">
+              <i class="material-icons">star_rate</i>Feedback stars
             </div>
-
+            <div class="options__field">
+              <div class="options__slider-wrapper">
+                <input type="text" id="feedbackStars" name="feedbackStars" class="options__slider-input"/>
+                <div class="sliders" id="feedbackSlider"></div>
+              </div>
+            </div>
           </div>
+          <!--<div class="collapsible-body"></div>-->
         </li>
       </ul>
 
-
-<!--
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Client info</h3>
-        </div>
-        <div class="panel-body">
-          <div class="checkbox">
-            <label><input type="checkbox" id="clientNew" name="clientNew"/> Consider  new (less then 1 month registered) </label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" id="paymentVerified" name="paymentVerified"/> Payment verified </label>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-6 col-xs-6">
-              <h4 class="panel-title">Include countries</h4>
-              <select id="selectInclude" multiple="multiple" name="selectInclude"></select>
+      <br>
+      <h5>
+        Options
+        <!--<i class="tiny material-icons tooltipped"-->
+           <!--data-position="right"-->
+           <!--data-delay="50"-->
+           <!--data-tooltip="Leave fields empty if it doesn't matter">info_outline</i>-->
+      </h5>
+      <ul class="collapsible" data-collapsible="expandable">
+        <li>
+          <div class="collapsible-header options__wrapper">
+            <div class="options__label">
+              <i class="material-icons">av_timer</i>Time to check (in minutes)
             </div>
-            <div class="col-lg-6 col-xs-6">
-              <h4 class="panel-title">Exclude countries</h4>
-              <select id="selectExclude" multiple="multiple" name="selectExclude"></select>
+            <div class="options__field">
+              <div class="options__slider-wrapper">
+                <input type="text" id="optionsTimeValue" name="optionsTime" class="options__slider-input"/>
+                <div class="sliders" id="optionsTimeSlider"></div>
+              </div>
+            </div>
+
+          </div>
+<!--          <div class="collapsible-body">
+            <div class="options__slider-wrapper">
+              <input type="text" id="optionsTimeValue" name="optionsTime" class="options__slider-input"/>
+              <div class="sliders" id="optionsTimeSlider"></div>
+            </div>
+          </div>-->
+        </li>
+        <li>
+          <div class="collapsible-header options__wrapper">
+            <div class="options__label">
+              <i class="material-icons">report_problem</i>Notification
+            </div>
+            <div class="options__field">
+              <div class="option__field">
+                <div class="switch">
+                  <label>
+                    Off
+                    <input type="checkbox" name="notification" checked>
+                    <span class="lever"></span>
+                    On
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
-          <br>
-          <div>
-            <h4 class="panel-title">Min feedback stars</h4>
-            <div class="row">
-              <div class="col-lg-6 col-xs-6">
-                <label for="feedbackStars">
-                  <input id="feedbackStars"
-                         name="feedbackStars"
-                         data-slider-id='ex1Slider'
-                         type="text"
-                         data-slider-min="0"
-                         data-slider-max="5"
-                         data-slider-step="0.5"
-                         data-slider-value="0"/>
+          <!--<div class="collapsible-body"></div>-->
+        </li>
+        <li>
+          <div class="collapsible-header options__wrapper">
+            <div class="options__label">
+              <i class="material-icons">queue_music</i>Notification sound
+            </div>
+            <div class="options__field">
+              <div class="switch">
+                <label>
+                  Off
+                  <input type="checkbox" name="notificationSound" checked>
+                  <span class="lever"></span>
+                  On
                 </label>
               </div>
-              <div class="col-lg-6 col-xs-6">
-                <span class="stars-amount">0</span>
-              </div>
             </div>
+
           </div>
-        </div>
-      </div>
--->
+          <!--<div class="collapsible-body"></div>-->
+        </li>
+      </ul>
 
 
       <div class="right">

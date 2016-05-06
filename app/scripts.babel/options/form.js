@@ -30,6 +30,22 @@ class Form {
   }
 
   enableSlider(params) {
+    let range = {},
+        step = '';
+
+    if (params.sliderId == 'optionsTimeSlider') {
+      range = {
+        min: 1,
+        max: 60
+      };
+      step = 1;
+    } else {
+      range = {
+        min: 0,
+        max: 5
+      };
+      step = 0.5;
+    }
     let el = $(`#${params.inputId}`);
     
     let slider2 = document.getElementById(params.sliderId);
@@ -37,11 +53,9 @@ class Form {
     
     noUiSlider.create(slider2, {
       start: value,
+      step: step,
       animate: false,
-      range: {
-        min: 0,
-        max: 5
-      }
+      range: range
     });
 
     slider2.noUiSlider.on('update', function( values, handle ){
@@ -49,12 +63,13 @@ class Form {
     });
   }
 
-  saveData(str) {
-    Options.save(str);
+  saveData(data) {
+    Options.save(data);
   }
 
   fill() {
     let data = Options.get();
+    
     for ( let name in data) {
       let value = data[name];
       
