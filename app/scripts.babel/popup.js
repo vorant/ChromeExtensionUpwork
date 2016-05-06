@@ -19,6 +19,7 @@ function getItemHTML(project) {
 function fillList() {
   let html = '';
   projectModel.projects.forEach(project => {
+    console.log('project ', project)
     html += getItemHTML(project);
   });
   $('.collection').html(html);
@@ -75,10 +76,13 @@ function checkMode() {
 
 function backgroundListeners() {
   chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    let project = request.message;
-    projectModel.projects.unshift(project);
-    let html = getItemHTML(project);
-    $('.collection').prepend(html);
+    if (request.message = 'newProject') {
+      let project = request.job;
+      projectModel.projects.unshift(project);
+      let html = getItemHTML(project);
+      $('.collection').prepend(html);
+    }
+
   });
 }
 

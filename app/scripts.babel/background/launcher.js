@@ -30,7 +30,7 @@ class Launcher {
       .then(jobs => { jobs.forEach(this.ProjectsModel.addProject.bind(this.ProjectsModel)); return jobs})
       .then(jobs => { jobs.forEach(MyNotification.newProject); return jobs})
       .then(jobs => { this.ProjectsModel.save.bind(this.ProjectsModel)(jobs); return jobs}) 
-      .then(jobs => { jobs.forEach(job => chrome.runtime.sendMessage({message: job}) ); return jobs})
+      .then(jobs => { jobs.forEach(job => chrome.runtime.sendMessage({message: 'newProject', job: job}) ); return jobs})
     ;
   }
   
