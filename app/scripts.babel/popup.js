@@ -19,6 +19,7 @@ function getItemHTML(project) {
 function fillList() {
   let html = '';
   projectModel.projects.forEach(project => {
+    console.log('project ', project)
     html += getItemHTML(project);
   });
   $('.collection').html(html);
@@ -28,13 +29,18 @@ function addWorkModeListeners() {
  
   $('.work-mode__label').on('click', debounce(handler, 10));
 
-
   function handler() {
     workMode = !workMode;
     WorkMode.save(workMode);
     let message = workMode ? 'switch-on' : 'switch-off';
     chrome.runtime.sendMessage({message: message});
   }
+}
+
+function addButtonListener() {
+  $('#buttonOptions').on('click', function () {
+    chrome.tabs.create({ 'url': 'chrome://extensions/?options=' + chrome.runtime.id });
+  });
 }
 
 function addJobListener() {
@@ -53,11 +59,11 @@ function addJobListener() {
 function checkAuthorization() {
   let isAuthorized = Authorization.isAuthorized();
   
-  let authorizationDOM = $('.authorization');
+  let authorizationIcon = $('.icon__account');
   if (isAuthorized) {
-    authorizationDOM.addClass('_authorized').text('Authorized');
+    authorizationIcon.addClass('_authorized');
   } else {
-    authorizationDOM.addClass('_not-authorized').text('Not authorized');
+    authorizationIcon.addClass('_not-authorized');
   }
 }
 
@@ -68,12 +74,28 @@ function checkMode() {
   }
 }
 
+function backgroundListeners() {
+  chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    if (request.message = 'newProject') {
+      let project = request.job;
+      projectModel.projects.unshift(project);
+      let html = getItemHTML(project);
+      $('.collection').prepend(html);
+    }
+
+  });
+}
+
 $(document).ready(function () {
   fillList();
   addWorkModeListeners();
   addJobListener();
+  addButtonListener();
   checkMode();
   checkAuthorization();
+  backgroundListeners();
+
+  // chrome.tabs.create({ 'url': 'chrome://extensions/?options=' + chrome.runtime.id });
 });
 
 function debounce(fn, time = 1){

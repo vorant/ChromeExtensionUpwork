@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <!-- build:css styles/popup-vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css" />
@@ -14,32 +16,47 @@
 
 </head>
 <body class="popup">
-<div>
-  <!--<h5 class="center-align">Work mode</h5>-->
-</div>
+  <div class="popup__header">
+    <nav class="popup__nav">
+      <div class="nav-wrapper">
+        <div class="row">
+          <div class="col s2">
+            <i class="small material-icons icon__settings" id="buttonOptions">settings</i>
+          </div>
+          <div class="col s2">
+            <i class="small material-icons icon__account">person_pin</i>
+          </div>
+          <div class="col s4">
+            <i></i>
+          </div>
+          <div class="col s4">
+            <div class="popup__switcher">
+              <div class="switch">
+                <label class="work-mode__label">
+                  Off
+                  <input type="checkbox" name="workmode" class="work-mode__input">
+                  <span class="lever"></span>
+                  On
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<div class="row">
-  <div class="col s6">
-    <div class="work-mode__title"><h6 class="authorization"></h6></div>
+      </div>
+    </nav>
   </div>
-  <div class="col s6">
-    <div class="switch">
-      <label class="work-mode__label">
-        Off
-        <input type="checkbox" name="workmode" class="work-mode__input">
-        <span class="lever"></span>
-        On
-      </label>
-    </div>
-  </div>
-</div>
 
-<div>
-  <h5 class="center-align">Projects List</h5>
-</div>
-<div class="projects">
-  <div class="collection"></div>
-</div>
+
+ <div class="popup__body">
+   <div>
+     <h5 class="center-align">Projects List</h5>
+   </div>
+   <div class="projects">
+     <div class="collection"></div>
+   </div>
+ </div>
+
 
 <!-- build:js scripts/popup-vendor.js -->
 <!-- bower:js -->

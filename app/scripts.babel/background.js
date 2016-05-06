@@ -16,5 +16,9 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.message == 'switch-off') {
     launcher.stop();
   }
+  if (request.message == 'reset') {
+    launcher.stop();
+    launcher.start();
+  }
 });
 

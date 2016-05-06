@@ -1,31 +1,43 @@
 'use strict';
+import Options from './../models/options.model';
 
 function audioNotification(){
-  var yourSound = new Audio('sound/sound.mp3');
-  yourSound.play();
+  new Audio('sound/sound.mp3').play();
 }
 
 class MyNotification {
   constructor() {}
 
   static newProject(project) {
-    let notification = new Notification('New project', {
-      icon: 'images/icon-128.png',
-      body: project.title
-    });
 
-    notification.onclick = function () {
-      window.open(`https://www.upwork.com/jobs/_${project.ciphertext}`);
-    };
-    audioNotification();
+    let options = Options.get();
+    
+    if (options.notification === 'on') {
+      let notification = new Notification('New project', {
+        icon: 'images/icon-128.png',
+        body: project.title
+      });
+
+      notification.onclick = function () {
+        window.open(`https://www.upwork.com/jobs/_${project.ciphertext}`);
+      };
+    }
+    if (options.notification === 'on' && options.notificationSound === 'on') {
+      audioNotification();
+    }
   }
 
   static notAuthorized() {
-    new Notification('Not Authorized', {
-      icon: 'images/icon-128.png',
-      body: 'Authorize at Upwork!'
-    });
-    audioNotification();
+    let options = Options.get();
+    if (options.notification === 'on') {
+      new Notification('Not Authorized', {
+        icon: 'images/icon-128.png',
+        body: 'Authorize at Upwork!'
+      });
+    }
+    if (options.notification === 'on' && options.notificationSound === 'on') {
+      audioNotification();
+    }
   }
 }
 
