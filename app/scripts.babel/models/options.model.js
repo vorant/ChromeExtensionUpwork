@@ -10,7 +10,7 @@ class Options {
   }
 
   static get() {
-    let str = localStorage[_storageField] || '';
+    let str = localStorage[_storageField] || '[]';
     let options = {};
     let data = [];
 

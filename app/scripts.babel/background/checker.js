@@ -3,7 +3,9 @@ import Options from './../models/options.model';
 
 function isPhraseInField(project, phrasesStr, field) {
   return !!phrasesStr.split(',')
-    .find(phrase => !!(project[field].indexOf(phrase) + 1));
+    .map(phrase => phrase.replace(/(^\s+|\s+$)/g,'') )
+    .map(phrase => phrase.toLowerCase() )
+    .find(phrase => !!(project[field].toLowerCase().indexOf(phrase) + 1));
 }
 
 function isCountryInCountries(countries, country) {
@@ -14,19 +16,7 @@ function isCountryInCountries(countries, country) {
   }
 }
 
-function getOptionType(options) {
-  let type = 'any';
-
-  if (options.hourly === 'on' && !options.fixedPrice) {
-    type = 'hourly';
-  } else if (options.fixedPrice === 'on' && !options.hourly) {
-    type = 'fixedPrice';
-  }
-
-  return type;
-}
-
- class Checker {
+class Checker {
    constructor(project, options) {
      this.project = project;
      this.options = options;

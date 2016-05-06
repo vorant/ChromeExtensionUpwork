@@ -32,8 +32,8 @@ class Projects {
   get(){
     let projects = [];
     try {
-      let str = localStorage[_storageField];
-      projects = JSON.parse(str) || [];
+      let str = localStorage[_storageField] || '[]';
+      projects = JSON.parse(str);
     } catch(e){
       
     }
