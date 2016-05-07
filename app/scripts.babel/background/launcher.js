@@ -5,6 +5,10 @@ import { check } from './checker';
 import Projects from './../models/projects.model'
 import MyNotification from './notifications';
 import Options from './../models/options.model';
+import Badge from './badge';
+
+let ProjectsModel = new Projects();
+
 
 class Launcher {
   constructor(){}
@@ -12,10 +16,10 @@ class Launcher {
   updateParams() {
     let options = Options.get();
     let time = (parseInt(options.optionsTime) || 1) * 1000 * 60;
-
+    
+    ProjectsModel = new Projects();
     this.timeToCheck = time;
     this.interval = null;
-    this.ProjectsModel = new Projects();
   }
 
   work(){
@@ -26,11 +30,15 @@ class Launcher {
       .then(jobs => jobs.filter(job => job.suitable))
       .then(jobs => jobs.map(job => job.project))
       .then(jobs => jobs.reverse())
-      .then(jobs => jobs.filter(this.ProjectsModel.isNewProject.bind(this.ProjectsModel)))
-      .then(jobs => { jobs.forEach(this.ProjectsModel.addProject.bind(this.ProjectsModel)); return jobs})
-      .then(jobs => { jobs.forEach(MyNotification.newProject); return jobs})
-      .then(jobs => { this.ProjectsModel.save.bind(this.ProjectsModel)(jobs); return jobs}) 
+      .then(jobs => jobs.filter(job => ProjectsModel.isNewProject(job)))
+      .then(jobs => { jobs.forEach(job => ProjectsModel.addProject(job)); return jobs})
+      .then(jobs => { jobs.forEach(job => MyNotification.newProject(job)); return jobs})
+      .then(jobs => { ProjectsModel.save(jobs); return jobs}) 
       .then(jobs => { jobs.forEach(job => chrome.runtime.sendMessage({message: 'newProject', job: job}) ); return jobs})
+      .then(jobs => {
+        let counter = ProjectsModel.getNewCount();
+        Badge.set(counter);
+      })
     ;
   }
   

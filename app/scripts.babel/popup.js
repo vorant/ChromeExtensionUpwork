@@ -2,6 +2,7 @@
 import Projects from './models/projects.model';
 import WorkMode from './models/workMode.model';
 import Authorization from './models/authorization.model';
+import Badge from './background/badge';
 
 let projectModel = new Projects();
 let workMode = WorkMode.get();
@@ -33,7 +34,7 @@ function addWorkModeListeners() {
     workMode = !workMode;
     WorkMode.save(workMode);
     let message = workMode ? 'switch-on' : 'switch-off';
-    chrome.runtime.sendMessage({message: message});
+    chrome.runtime.sendMessage({message: message, who: 'popup'});
   }
 }
 
@@ -46,12 +47,17 @@ function addButtonListener() {
 function addJobListener() {
   $('.collection-item').on('click', function(evt) {
     let projectId = $(this).attr('data-projectId');
+    
     projectModel.projects = projectModel.projects.map(project => {
       if (project[projectModel.idField] == projectId) {
         project.isNew = false;   
       }
       return project;
     });
+    
+    let counter = projectModel.getNewCount();
+    Badge.set(counter);
+    
     projectModel.save();
   });
 }

@@ -28,6 +28,17 @@ class Projects {
     this.deleteOld();
     localStorage[_storageField] = JSON.stringify(this.projects);
   }
+  
+  getNewCount(){
+    let counter = 0;
+
+    this.projects.forEach(project => {
+      if (project.isNew) {
+        counter++
+      }
+    });
+    return counter;
+  }
 
   get(){
     let projects = [];

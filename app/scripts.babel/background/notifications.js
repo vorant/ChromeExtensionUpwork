@@ -1,8 +1,12 @@
 'use strict';
 import Options from './../models/options.model';
 
-function audioNotification(){
-  new Audio('sound/sound.mp3').play();
+function audioNewProject(){
+  new Audio('sound/sound-new-project.mp3').play();
+}
+
+function audioAlarm(){
+  new Audio('sound/sound-alarm.mp3').play();
 }
 
 class MyNotification {
@@ -23,7 +27,7 @@ class MyNotification {
       };
     }
     if (options.notification === 'on' && options.notificationSound === 'on') {
-      audioNotification();
+      audioNewProject();
     }
   }
 
@@ -36,7 +40,7 @@ class MyNotification {
       });
     }
     if (options.notification === 'on' && options.notificationSound === 'on') {
-      audioNotification();
+      audioAlarm();
     }
   }
 }
