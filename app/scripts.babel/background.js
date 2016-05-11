@@ -2,6 +2,9 @@
 
 import Launcher from './background/launcher';
 import WorkMode from './models/workMode.model';
+import {setDefaultParameters} from './background/setDefaultParameters';
+
+chrome.runtime.onInstalled.addListener(setDefaultParameters);
 
 let launcher = new Launcher();
 
@@ -17,8 +20,12 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     launcher.stop();
   }
   if (request.message == 'reset') {
-    launcher.stop();
-    launcher.start();
+    if (WorkMode.get()) { 
+      launcher.stop();
+      launcher.start();
+    }
   }
 });
+
+
 

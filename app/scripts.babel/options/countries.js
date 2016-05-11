@@ -1,5 +1,9 @@
 export const countries = [
   {
+    'name': 'null',
+    'code': 'null' 
+  },
+  {
     'name': 'Afghanistan',
     'code': 'AF'
   },

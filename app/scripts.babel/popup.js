@@ -20,7 +20,7 @@ function getItemHTML(project) {
 function fillList() {
   let html = '';
   projectModel.projects.forEach(project => {
-    console.log('project ', project)
+    console.log('project ', project);
     html += getItemHTML(project);
   });
   $('.collection').html(html);

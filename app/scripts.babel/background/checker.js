@@ -9,6 +9,8 @@ function isPhraseInField(project, phrasesStr, field) {
 }
 
 function isCountryInCountries(countries, country) {
+  country = country === 'null' ? null : country;
+
   if (Array.isArray(countries)) {
     return !!countries.find( arrElem => arrElem == country);
   } else if (typeof countries ===  'string') {

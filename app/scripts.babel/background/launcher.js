@@ -17,12 +17,13 @@ class Launcher {
     let options = Options.get();
     let time = (parseInt(options.optionsTime) || 1) * 1000 * 60;
     
-    ProjectsModel = new Projects();
+    
     this.timeToCheck = time;
     this.interval = null;
   }
 
   work(){
+    ProjectsModel = new Projects();
     
     getJobs()
       .then(jobs => jobs.map(check))
@@ -43,6 +44,7 @@ class Launcher {
   }
   
   start(){
+    this.stop();
     this.updateParams();
     this.work();
     this.interval = setInterval(this.work.bind(this), this.timeToCheck)
