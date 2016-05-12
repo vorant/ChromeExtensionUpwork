@@ -33,7 +33,7 @@ class Launcher {
       .then(jobs => jobs.reverse())
       .then(jobs => jobs.filter(job => ProjectsModel.isNewProject(job)))
       .then(jobs => { jobs.forEach(job => ProjectsModel.addProject(job)); return jobs})
-      .then(jobs => { jobs.forEach(job => MyNotification.newProject(job)); return jobs})
+      .then(jobs => { jobs.forEach(job => MyNotification.newProject(job, ProjectsModel)); return jobs})
       .then(jobs => { ProjectsModel.save(jobs); return jobs}) 
       .then(jobs => { jobs.forEach(job => chrome.runtime.sendMessage({message: 'newProject', job: job}) ); return jobs})
       .then(jobs => {

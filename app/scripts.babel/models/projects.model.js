@@ -51,6 +51,17 @@ class Projects {
     return  projects;
   }
 
+  setProjectAsOld(id){
+    this.projects = this.projects.map(project => {
+      if (project[this.idField] == id) {
+        project.isNew = false;
+      }
+      return project;
+    });
+
+    this.save();
+  }
+
 }
 
 export default Projects;

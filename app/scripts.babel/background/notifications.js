@@ -1,5 +1,6 @@
 'use strict';
 import Options from './../models/options.model';
+import Badge from './badge';
 
 function audioNewProject(){
   new Audio('sound/sound-new-project.mp3').play();
@@ -12,7 +13,7 @@ function audioAlarm(){
 class MyNotification {
   constructor() {}
 
-  static newProject(project) {
+  static newProject(project, projectModel) {
 
     let options = Options.get();
     
@@ -23,6 +24,13 @@ class MyNotification {
       });
 
       notification.onclick = function () {
+        let id = project[projectModel.idField];
+        projectModel.setProjectAsOld(id);
+
+        let counter = projectModel.getNewCount();
+        Badge.set(counter);
+        
+        notification.close();
         window.open(`https://www.upwork.com/jobs/_${project.ciphertext}`);
       };
     }

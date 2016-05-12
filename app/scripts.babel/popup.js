@@ -47,18 +47,11 @@ function addButtonListener() {
 function addJobListener() {
   $('.collection-item').on('click', function(evt) {
     let projectId = $(this).attr('data-projectId');
-    
-    projectModel.projects = projectModel.projects.map(project => {
-      if (project[projectModel.idField] == projectId) {
-        project.isNew = false;   
-      }
-      return project;
-    });
-    
+
+    projectModel.setProjectAsOld(projectId);
+
     let counter = projectModel.getNewCount();
     Badge.set(counter);
-    
-    projectModel.save();
   });
 }
 
@@ -74,7 +67,6 @@ function checkAuthorization() {
 }
 
 function checkMode() {
-  
   if (workMode) {
     $(`.work-mode__input`).attr('checked','checked');
   }
@@ -88,7 +80,6 @@ function backgroundListeners() {
       let html = getItemHTML(project);
       $('.collection').prepend(html);
     }
-
   });
 }
 
