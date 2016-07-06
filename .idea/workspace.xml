@@ -3,10 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="d8aa7ce2-dcae-4ebc-aa73-a219fb478c95" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts.babel/background/launcher.js" afterPath="$PROJECT_DIR$/app/scripts.babel/background/launcher.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/_locales/en/messages.json" afterPath="$PROJECT_DIR$/app/_locales/en/messages.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/popup.html" afterPath="$PROJECT_DIR$/app/popup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts.babel/background.js" afterPath="$PROJECT_DIR$/app/scripts.babel/background.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts.babel/background/notifications.js" afterPath="$PROJECT_DIR$/app/scripts.babel/background/notifications.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts.babel/models/projects.model.js" afterPath="$PROJECT_DIR$/app/scripts.babel/models/projects.model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts.babel/background/parser.js" afterPath="$PROJECT_DIR$/app/scripts.babel/background/parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts.babel/background/setDefaultParameters.js" afterPath="$PROJECT_DIR$/app/scripts.babel/background/setDefaultParameters.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts.babel/models/authorization.model.js" afterPath="$PROJECT_DIR$/app/scripts.babel/models/authorization.model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts.babel/options/countries.js" afterPath="$PROJECT_DIR$/app/scripts.babel/options/countries.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts.babel/popup.js" afterPath="$PROJECT_DIR$/app/scripts.babel/popup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="$PROJECT_DIR$/app/styles/main.css" />
     </list>
     <ignored path="new_fucking_extension.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,102 +33,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="background.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts.babel/background.js">
+      <file leaf-file-name="setDefaultParameters.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/setDefaultParameters.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+            <state relative-caret-position="119">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding>
-                <element signature="e#15#60#0" expanded="true" />
+                <element signature="e#0#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="options.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/options.html">
+      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="70" column="44" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="44" />
+            <state relative-caret-position="391">
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="options.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts.babel/options.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="47" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="notifications.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/notifications.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
-              <folding>
-                <element signature="e#14#62#0" expanded="true" />
-                <element signature="e#471#545#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="launcher.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/launcher.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-              <folding>
-                <element signature="e#15#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts.babel/options/form.js">
+      <file leaf-file-name="messages.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/_locales/en/messages.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="9" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!block;n#constructor#0;n#Form#0" expanded="false" />
-                <element signature="n#!!block;n#enableMultiSelects#0;n#Form#0" expanded="false" />
-                <element signature="n#!!block;n#saveData#0;n#Form#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="popup.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts.babel/popup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
-              <folding>
-                <element signature="e#14#61#0" expanded="true" />
-                <element signature="n#!!block;n#fillList#0" expanded="false" />
-                <element signature="n#!!block;n#addWorkModeListeners#0" expanded="false" />
-                <element signature="n#!!block;n#addButtonListener#0" expanded="false" />
-                <element signature="n#!!block;n#checkAuthorization#0" expanded="false" />
-                <element signature="n#!!block;n#checkMode#0" expanded="false" />
-                <element signature="n#!!block;n#backgroundListeners#0" expanded="false" />
-                <element signature="n#!!block;n#debounce#0" expanded="false" />
-                <marker date="1463078996390" expanded="true" signature="426:616" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projects.model.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts.babel/models/projects.model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -149,28 +86,29 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/app/scripts.babel/models/authorization.model.js" />
         <option value="$PROJECT_DIR$/app/scripts.babel/models/workMode.model.js" />
         <option value="$PROJECT_DIR$/app/manifest.json" />
         <option value="$PROJECT_DIR$/bower.json" />
-        <option value="$PROJECT_DIR$/app/_locales/en/messages.json" />
         <option value="$PROJECT_DIR$/gulpfile.babel.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/scripts.babel/options/form.js" />
         <option value="$PROJECT_DIR$/app/options.html" />
-        <option value="$PROJECT_DIR$/app/popup.html" />
-        <option value="$PROJECT_DIR$/app/styles/main.css" />
         <option value="$PROJECT_DIR$/app/scripts.babel/options.js" />
         <option value="$PROJECT_DIR$/app/scripts.babel/models/options.model.js" />
         <option value="$PROJECT_DIR$/app/scripts.babel/background/badge.js" />
-        <option value="$PROJECT_DIR$/app/scripts.babel/options/countries.js" />
         <option value="$PROJECT_DIR$/app/scripts.babel/background/checker.js" />
-        <option value="$PROJECT_DIR$/app/scripts.babel/background/setDefaultParameters.js" />
-        <option value="$PROJECT_DIR$/app/scripts.babel/background.js" />
         <option value="$PROJECT_DIR$/app/scripts.babel/models/projects.model.js" />
-        <option value="$PROJECT_DIR$/app/scripts.babel/popup.js" />
         <option value="$PROJECT_DIR$/app/scripts.babel/background/launcher.js" />
+        <option value="$PROJECT_DIR$/app/scripts.babel/background/parser.js" />
+        <option value="$PROJECT_DIR$/app/scripts.babel/models/authorization.model.js" />
         <option value="$PROJECT_DIR$/app/scripts.babel/background/notifications.js" />
+        <option value="$PROJECT_DIR$/app/scripts.babel/background.js" />
+        <option value="$PROJECT_DIR$/app/scripts.babel/popup.js" />
+        <option value="$PROJECT_DIR$/app/styles/main.css" />
+        <option value="$PROJECT_DIR$/app/popup.html" />
+        <option value="$PROJECT_DIR$/app/scripts.babel/options/countries.js" />
+        <option value="$PROJECT_DIR$/app/scripts.babel/background/setDefaultParameters.js" />
+        <option value="$PROJECT_DIR$/app/_locales/en/messages.json" />
       </list>
     </option>
   </component>
@@ -210,8 +148,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -258,109 +196,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_fucking_extension" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_fucking_extension" />
+              <option name="myItemId" value="_locales" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sound" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_fucking_extension" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_fucking_extension" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts.babel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_fucking_extension" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_fucking_extension" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts.babel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="options" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_fucking_extension" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_fucking_extension" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts.babel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_fucking_extension" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_fucking_extension" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts.babel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="background" />
+              <option name="myItemId" value="en" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -478,7 +318,9 @@
       <workItem from="1462956049790" duration="372000" />
       <workItem from="1462956583177" duration="509000" />
       <workItem from="1462960368602" duration="1428000" />
-      <workItem from="1463078345462" duration="1005000" />
+      <workItem from="1463078345462" duration="1666000" />
+      <workItem from="1463378012123" duration="8000" />
+      <workItem from="1467832892201" duration="5109000" />
     </task>
     <task id="LOCAL-00001" summary="Это блять работает">
       <created>1462285504282</created>
@@ -543,17 +385,24 @@
       <option name="project" value="LOCAL" />
       <updated>1462961187166</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix badge bug">
+      <created>1463079366589</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1463079366589</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48157000" />
+    <option name="totallyTimeSpent" value="53935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2655427" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2650158" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -592,7 +441,8 @@
     <MESSAGE value="bug fix" />
     <MESSAGE value="bug add badges" />
     <MESSAGE value="bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fixes" />
+    <MESSAGE value="fix badge bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix badge bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -601,54 +451,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="70" column="61" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/options.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/options.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts.babel/options.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts.babel/options/form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!block;n#constructor#0;n#Form#0" expanded="false" />
-            <element signature="n#!!block;n#enableMultiSelects#0;n#Form#0" expanded="false" />
-            <element signature="n#!!block;n#saveData#0;n#Form#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -683,7 +485,7 @@
         <state relative-caret-position="85">
           <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding>
-            <element signature="e#14#62#0" expanded="true" />
+            <element signature="e#14#62#0" expanded="false" />
             <element signature="e#471#545#0" expanded="true" />
           </folding>
         </state>
@@ -766,13 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -801,13 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/_locales/en/messages.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/options.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -815,32 +603,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="130" column="23" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -852,13 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/parser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/url.constant.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -866,48 +625,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts.babel/options/countries.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/checker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="84" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts.babel/models/authorization.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts.babel/models/workMode.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts.babel/models/options.model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/setDefaultParameters.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -923,21 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/popup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/options.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="44" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts.babel/options.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -946,60 +652,321 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts.babel/background.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-          <folding>
-            <element signature="e#15#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts.babel/popup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
-          <folding>
-            <element signature="e#14#61#0" expanded="true" />
-            <element signature="n#!!block;n#fillList#0" expanded="false" />
-            <element signature="n#!!block;n#addWorkModeListeners#0" expanded="false" />
-            <element signature="n#!!block;n#addButtonListener#0" expanded="false" />
-            <element signature="n#!!block;n#checkAuthorization#0" expanded="false" />
-            <element signature="n#!!block;n#checkMode#0" expanded="false" />
-            <element signature="n#!!block;n#backgroundListeners#0" expanded="false" />
-            <element signature="n#!!block;n#debounce#0" expanded="false" />
-            <marker date="1463078996390" expanded="true" signature="426:616" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/launcher.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="442">
           <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
           <folding>
-            <element signature="e#15#50#0" expanded="true" />
+            <element signature="e#15#50#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts.babel/models/projects.model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="1037">
           <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/checker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!block;n#isPhraseInField#0" expanded="false" />
+            <element signature="n#!!block;n#isCountryInCountries#0" expanded="false" />
+            <element signature="e#461#527#0" expanded="false" />
+            <element signature="e#569#609#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Checker#0" expanded="false" />
+            <element signature="n#!!doc;n#checkProjectType#0;n#Checker#0" expanded="false" />
+            <element signature="n#!!block;n#checkProjectType#0;n#Checker#0" expanded="false" />
+            <element signature="e#1075#1105#0" expanded="false" />
+            <element signature="e#1125#1232#0" expanded="false" />
+            <element signature="n#!!doc;n#checkBudget#0;n#Checker#0" expanded="false" />
+            <element signature="n#!!block;n#checkBudget#0;n#Checker#0" expanded="false" />
+            <element signature="e#1467#2023#0" expanded="false" />
+            <element signature="e#1734#1769#0" expanded="false" />
+            <element signature="e#1825#1860#0" expanded="false" />
+            <element signature="e#1882#2016#0" expanded="false" />
+            <element signature="n#!!doc;n#checkPhrases#0;n#Checker#0" expanded="false" />
+            <element signature="n#!!block;n#checkPhrases#0;n#Checker#0" expanded="false" />
+            <element signature="e#2349#2579#0" expanded="false" />
+            <element signature="e#2618#2848#0" expanded="false" />
+            <element signature="e#3025#3384#0" expanded="false" />
+            <element signature="e#3099#3200#0" expanded="false" />
+            <element signature="e#3270#3377#0" expanded="false" />
+            <element signature="n#!!doc;n#checkPaymentVerification#0;n#Checker#0" expanded="false" />
+            <element signature="n#!!block;n#checkPaymentVerification#0;n#Checker#0" expanded="false" />
+            <element signature="e#3873#3903#0" expanded="false" />
+            <element signature="e#3923#4080#0" expanded="false" />
+            <element signature="n#!!doc;n#checkCountry#0;n#Checker#0" expanded="false" />
+            <element signature="n#!!block;n#checkCountry#0;n#Checker#0" expanded="false" />
+            <element signature="e#4310#4590#0" expanded="false" />
+            <element signature="e#4414#4583#0" expanded="false" />
+            <element signature="n#!!doc;n#checkFeedback#0;n#Checker#0" expanded="false" />
+            <element signature="n#!!block;n#checkFeedback#0;n#Checker#0" expanded="false" />
+            <element signature="e#4921#5050#0" expanded="false" />
+            <element signature="n#!!block;n#checkProject#0;n#Checker#0" expanded="false" />
+            <element signature="n#!!block;n#checkClient#0;n#Checker#0" expanded="false" />
+            <element signature="n#!!block;n#isSuitable#0;n#Checker#0" expanded="false" />
+            <element signature="n#!!block;n#check#0" expanded="false" />
+            <element signature="e#5490#5922#0" expanded="false" />
+            <element signature="e#5924#7466#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts.babel/models/authorization.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/parser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#14#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/images/icon-128.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/images/up400x400.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/images/icon-38.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/images/up16.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/images/up128.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/notifications.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        <state relative-caret-position="355">
+          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
           <folding>
-            <element signature="e#14#62#0" expanded="true" />
             <element signature="e#471#545#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts.babel/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="129" column="4" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
+          <folding>
+            <element signature="e#2636#2705#0" expanded="true" />
+            <element signature="e#2863#2929#0" expanded="true" />
+            <element signature="e#3082#3146#0" expanded="true" />
+            <element signature="e#3841#3883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts.babel/models/workMode.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts.babel/popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
+          <folding>
+            <element signature="e#14#66#0" expanded="true" />
+            <element signature="n#!!block;n#addWorkModeListeners#0" expanded="false" />
+            <element signature="n#!!block;n#addButtonListener#0" expanded="false" />
+            <element signature="n#!!block;n#checkAuthorization#0" expanded="false" />
+            <element signature="n#!!block;n#checkMode#0" expanded="false" />
+            <element signature="n#!!block;n#backgroundListeners#0" expanded="false" />
+            <element signature="n#!!block;n#debounce#0" expanded="false" />
+            <marker date="1467836633767" expanded="true" signature="444:634" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="157" column="21" selection-start-line="157" selection-start-column="21" selection-end-line="157" selection-end-column="21" />
+          <folding>
+            <element signature="e#10#42#0" expanded="false" />
+            <element signature="e#50#87#0" expanded="false" />
+            <element signature="e#95#156#0" expanded="false" />
+            <element signature="e#167#203#0" expanded="false" />
+            <element signature="e#214#275#0" expanded="false" />
+            <element signature="e#292#377#0" expanded="false" />
+            <element signature="e#391#410#0" expanded="false" />
+            <element signature="e#428#445#0" expanded="false" />
+            <element signature="e#458#462#0" expanded="false" />
+            <element signature="e#483#554#0" expanded="false" />
+            <element signature="e#578#628#0" expanded="false" />
+            <element signature="e#640#702#0" expanded="false" />
+            <element signature="e#713#733#0" expanded="false" />
+            <element signature="e#750#799#0" expanded="false" />
+            <element signature="e#816#858#0" expanded="false" />
+            <element signature="e#879#941#0" expanded="false" />
+            <element signature="e#968#1016#0" expanded="false" />
+            <element signature="e#1044#1145#0" expanded="false" />
+            <element signature="e#1173#1254#0" expanded="false" />
+            <element signature="e#1273#1322#0" expanded="false" />
+            <element signature="e#1343#1403#0" expanded="false" />
+            <element signature="e#1471#1534#0" expanded="false" />
+            <element signature="e#1561#1607#0" expanded="false" />
+            <element signature="e#1642#1702#0" expanded="false" />
+            <element signature="e#1722#1738#0" expanded="false" />
+            <element signature="e#1767#1782#0" expanded="false" />
+            <element signature="e#1804#1848#0" expanded="false" />
+            <element signature="e#1865#1869#0" expanded="false" />
+            <element signature="e#1884#1914#0" expanded="false" />
+            <element signature="e#1928#1948#0" expanded="false" />
+            <element signature="e#2273#2293#0" expanded="false" />
+            <element signature="e#2307#2369#0" expanded="false" />
+            <element signature="e#2459#2481#0" expanded="false" />
+            <element signature="e#2524#2561#0" expanded="false" />
+            <element signature="e#2579#2601#0" expanded="false" />
+            <element signature="e#2655#2676#0" expanded="false" />
+            <element signature="e#2710#2779#0" expanded="false" />
+            <element signature="e#2791#3889#0" expanded="false" />
+            <element signature="e#3903#4066#0" expanded="false" />
+            <element signature="e#4080#4251#0" expanded="false" />
+            <element signature="e#4265#4431#0" expanded="false" />
+            <element signature="e#4445#4616#0" expanded="false" />
+            <element signature="e#4630#4796#0" expanded="false" />
+            <element signature="e#4810#4981#0" expanded="false" />
+            <element signature="e#4995#5161#0" expanded="false" />
+            <element signature="e#5175#5347#0" expanded="false" />
+            <element signature="e#5351#5530#0" expanded="false" />
+            <element signature="e#5384#5451#0" expanded="false" />
+            <element signature="e#5459#5528#0" expanded="false" />
+            <element signature="e#5532#5720#0" expanded="false" />
+            <element signature="e#5568#5638#0" expanded="false" />
+            <element signature="e#5646#5718#0" expanded="false" />
+            <element signature="e#5722#5913#0" expanded="false" />
+            <element signature="e#5759#5830#0" expanded="false" />
+            <element signature="e#5838#5911#0" expanded="false" />
+            <element signature="e#5915#6118#0" expanded="false" />
+            <element signature="e#5956#6031#0" expanded="false" />
+            <element signature="e#6039#6116#0" expanded="false" />
+            <element signature="e#6120#6314#0" expanded="false" />
+            <element signature="e#6158#6230#0" expanded="false" />
+            <element signature="e#6238#6312#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/popup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="57" column="82" selection-start-line="57" selection-start-column="82" selection-end-line="57" selection-end-column="82" />
+          <folding>
+            <element signature="n#div#2;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts.babel/options/countries.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3776">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding>
+            <element signature="e#88#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/options.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2186">
+          <caret line="70" column="44" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="44" />
+          <folding>
+            <element signature="n#li#1;n#ul#2;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#2;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/setDefaultParameters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/_locales/en/messages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

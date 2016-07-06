@@ -2,7 +2,6 @@
 import Ajax from './ajax.js';
 import {url} from './url.constant.js';
 import Authorization from './../models/authorization.model';
-import MyNotification from './notifications';
 
 function initParse() {
   return new Ajax()
@@ -13,7 +12,7 @@ function initParse() {
     )
     .then(
       result => { 
-        if (isAuthorized(result)) {
+        if (Authorization.check(result)) {
           return result;  
         } else {
           throw new Error('Not authorized')
@@ -33,20 +32,6 @@ function initParse() {
       new Error(`Something Wrong ${error}`)
     });
     // .then(result => []);
-}
-
-
-function isAuthorized(result) {
-  let isAuthorized = false;
-  
-  if (!(result.indexOf('<!DOCTYPE html>') + 1)) {
-    isAuthorized = true;
-  } else {
-    MyNotification.notAuthorized();
-  }
-
-  Authorization.save(isAuthorized);
-  return isAuthorized;
 }
 
 export function getJobs() {

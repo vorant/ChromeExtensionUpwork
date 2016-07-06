@@ -6,6 +6,7 @@ import {setDefaultParameters} from './background/setDefaultParameters';
 
 chrome.runtime.onInstalled.addListener(setDefaultParameters);
 
+
 let launcher = new Launcher();
 
 if (WorkMode.get()) { // start launcher when browser begins to work

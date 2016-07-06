@@ -43,8 +43,8 @@ class MyNotification {
     let options = Options.get();
     if (options.notification === 'on') {
       new Notification('Not Authorized', {
-        icon: 'images/icon-128.png',
-        body: 'Authorize at Upwork!'
+        icon: 'images/up128.png',
+        body: 'Please Sign In at Upwork!'
       });
     }
     if (options.notification === 'on' && options.notificationSound === 'on') {

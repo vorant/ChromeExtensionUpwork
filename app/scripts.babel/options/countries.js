@@ -1,6 +1,6 @@
 export const countries = [
   {
-    'name': 'null',
+    'name': 'Choose country',
     'code': 'null' 
   },
   {

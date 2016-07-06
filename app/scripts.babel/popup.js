@@ -1,8 +1,8 @@
 'use strict';
-import Projects from './models/projects.model';
-import WorkMode from './models/workMode.model';
+import Projects      from './models/projects.model';
+import WorkMode      from './models/workMode.model';
 import Authorization from './models/authorization.model';
-import Badge from './background/badge';
+import Badge         from './background/badge';
 
 let projectModel = new Projects();
 let workMode = WorkMode.get();
@@ -20,7 +20,6 @@ function getItemHTML(project) {
 function fillList() {
   let html = '';
   projectModel.projects.forEach(project => {
-    console.log('project ', project);
     html += getItemHTML(project);
   });
   $('.collection').html(html);
@@ -52,18 +51,27 @@ function addJobListener() {
 
     let counter = projectModel.getNewCount();
     Badge.set(counter);
+
+    if (evt.which == 2) { // 2 - is middle button mouse
+      $(this).removeClass('active');
+      evt.preventDefault();
+      return false;
+    }
   });
 }
 
 function checkAuthorization() {
-  let isAuthorized = Authorization.isAuthorized();
-  
-  let authorizationIcon = $('.icon__account');
-  if (isAuthorized) {
-    authorizationIcon.addClass('_authorized');
-  } else {
-    authorizationIcon.addClass('_not-authorized');
-  }
+  Authorization.isAuthorized().then(isAuthorized => {
+    let popupBody = $('.popup__body');
+    
+    if (isAuthorized) {
+      popupBody.addClass('_authorization_true');
+      popupBody.removeClass('_authorization_false');
+    } else {
+      popupBody.removeClass('_authorization_true');
+      popupBody.addClass('_authorization_false');
+    }
+  });
 }
 
 function checkMode() {
