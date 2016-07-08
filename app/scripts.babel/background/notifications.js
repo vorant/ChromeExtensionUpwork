@@ -19,7 +19,7 @@ class MyNotification {
     
     if (options.notification === 'on') {
       let notification = new Notification('New project', {
-        icon: 'images/icon-128.png',
+        icon: 'images/up128.png',
         body: project.title
       });
 

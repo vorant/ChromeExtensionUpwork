@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d8aa7ce2-dcae-4ebc-aa73-a219fb478c95" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/_locales/en/messages.json" afterPath="$PROJECT_DIR$/app/_locales/en/messages.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/popup.html" afterPath="$PROJECT_DIR$/app/popup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts.babel/background.js" afterPath="$PROJECT_DIR$/app/scripts.babel/background.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts.babel/background/notifications.js" afterPath="$PROJECT_DIR$/app/scripts.babel/background/notifications.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts.babel/background/parser.js" afterPath="$PROJECT_DIR$/app/scripts.babel/background/parser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts.babel/background/setDefaultParameters.js" afterPath="$PROJECT_DIR$/app/scripts.babel/background/setDefaultParameters.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts.babel/models/authorization.model.js" afterPath="$PROJECT_DIR$/app/scripts.babel/models/authorization.model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts.babel/options/countries.js" afterPath="$PROJECT_DIR$/app/scripts.babel/options/countries.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts.babel/popup.js" afterPath="$PROJECT_DIR$/app/scripts.babel/popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="$PROJECT_DIR$/app/styles/main.css" />
     </list>
     <ignored path="new_fucking_extension.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,34 +25,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="setDefaultParameters.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/setDefaultParameters.js">
+      <file leaf-file-name="background.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts.babel/background.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            <state relative-caret-position="340">
+              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
               <folding>
-                <element signature="e#0#46#0" expanded="true" />
+                <element signature="e#15#60#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/manifest.json">
+      <file leaf-file-name="popup.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts.babel/popup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="170">
+              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+              <folding>
+                <element signature="e#14#66#0" expanded="true" />
+                <element signature="n#!!block;n#fillList#0" expanded="false" />
+                <element signature="n#!!block;n#addWorkModeListeners#0" expanded="false" />
+                <element signature="n#!!block;n#addButtonListener#0" expanded="false" />
+                <element signature="n#!!block;n#checkAuthorization#0" expanded="false" />
+                <element signature="n#!!block;n#checkMode#0" expanded="false" />
+                <element signature="n#!!block;n#debounce#0" expanded="false" />
+                <marker date="1467924896124" expanded="true" signature="447:637" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="launcher.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/launcher.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="37" column="80" selection-start-line="37" selection-start-column="80" selection-end-line="37" selection-end-column="80" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/_locales/en/messages.json">
+      <file leaf-file-name="notifications.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/notifications.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="520">
+              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+              <folding>
+                <element signature="e#14#62#0" expanded="true" />
+                <element signature="e#471#542#0" expanded="true" />
+                <element signature="e#1144#1229#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,14 +116,14 @@
         <option value="$PROJECT_DIR$/app/scripts.babel/background/launcher.js" />
         <option value="$PROJECT_DIR$/app/scripts.babel/background/parser.js" />
         <option value="$PROJECT_DIR$/app/scripts.babel/models/authorization.model.js" />
-        <option value="$PROJECT_DIR$/app/scripts.babel/background/notifications.js" />
         <option value="$PROJECT_DIR$/app/scripts.babel/background.js" />
-        <option value="$PROJECT_DIR$/app/scripts.babel/popup.js" />
         <option value="$PROJECT_DIR$/app/styles/main.css" />
         <option value="$PROJECT_DIR$/app/popup.html" />
         <option value="$PROJECT_DIR$/app/scripts.babel/options/countries.js" />
         <option value="$PROJECT_DIR$/app/scripts.babel/background/setDefaultParameters.js" />
         <option value="$PROJECT_DIR$/app/_locales/en/messages.json" />
+        <option value="$PROJECT_DIR$/app/scripts.babel/popup.js" />
+        <option value="$PROJECT_DIR$/app/scripts.babel/background/notifications.js" />
       </list>
     </option>
   </component>
@@ -179,6 +194,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new_fucking_extension" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new_fucking_extension" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts.babel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new_fucking_extension" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="new_fucking_extension" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts.babel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="background" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -320,7 +375,8 @@
       <workItem from="1462960368602" duration="1428000" />
       <workItem from="1463078345462" duration="1666000" />
       <workItem from="1463378012123" duration="8000" />
-      <workItem from="1467832892201" duration="5109000" />
+      <workItem from="1467832892201" duration="5882000" />
+      <workItem from="1467923978282" duration="1518000" />
     </task>
     <task id="LOCAL-00001" summary="Это блять работает">
       <created>1462285504282</created>
@@ -392,11 +448,18 @@
       <option name="project" value="LOCAL" />
       <updated>1463079366589</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add ability to set project as readable&#10;changed authorization info">
+      <created>1467838077037</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1467838077037</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53935000" />
+    <option name="totallyTimeSpent" value="56226000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -405,6 +468,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2650158" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -417,7 +481,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -442,7 +505,8 @@
     <MESSAGE value="bug add badges" />
     <MESSAGE value="bug fixes" />
     <MESSAGE value="fix badge bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix badge bug" />
+    <MESSAGE value="add ability to set project as readable&#10;changed authorization info" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ability to set project as readable&#10;changed authorization info" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -485,8 +549,9 @@
         <state relative-caret-position="85">
           <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding>
-            <element signature="e#14#62#0" expanded="false" />
-            <element signature="e#471#545#0" expanded="true" />
+            <element signature="e#14#62#0" expanded="true" />
+            <element signature="e#471#542#0" expanded="true" />
+            <element signature="e#1144#1229#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -629,6 +694,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -636,11 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="9" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#constructor#0;n#Form#0" expanded="false" />
-            <element signature="n#!!block;n#enableMultiSelects#0;n#Form#0" expanded="false" />
-            <element signature="n#!!block;n#saveData#0;n#Form#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -648,17 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="47" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/launcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-          <folding>
-            <element signature="e#15#50#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -688,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,47 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!block;n#isPhraseInField#0" expanded="false" />
-            <element signature="n#!!block;n#isCountryInCountries#0" expanded="false" />
-            <element signature="e#461#527#0" expanded="false" />
-            <element signature="e#569#609#0" expanded="false" />
-            <element signature="n#!!block;n#constructor#0;n#Checker#0" expanded="false" />
-            <element signature="n#!!doc;n#checkProjectType#0;n#Checker#0" expanded="false" />
-            <element signature="n#!!block;n#checkProjectType#0;n#Checker#0" expanded="false" />
-            <element signature="e#1075#1105#0" expanded="false" />
-            <element signature="e#1125#1232#0" expanded="false" />
-            <element signature="n#!!doc;n#checkBudget#0;n#Checker#0" expanded="false" />
-            <element signature="n#!!block;n#checkBudget#0;n#Checker#0" expanded="false" />
-            <element signature="e#1467#2023#0" expanded="false" />
-            <element signature="e#1734#1769#0" expanded="false" />
-            <element signature="e#1825#1860#0" expanded="false" />
-            <element signature="e#1882#2016#0" expanded="false" />
-            <element signature="n#!!doc;n#checkPhrases#0;n#Checker#0" expanded="false" />
-            <element signature="n#!!block;n#checkPhrases#0;n#Checker#0" expanded="false" />
-            <element signature="e#2349#2579#0" expanded="false" />
-            <element signature="e#2618#2848#0" expanded="false" />
-            <element signature="e#3025#3384#0" expanded="false" />
-            <element signature="e#3099#3200#0" expanded="false" />
-            <element signature="e#3270#3377#0" expanded="false" />
-            <element signature="n#!!doc;n#checkPaymentVerification#0;n#Checker#0" expanded="false" />
-            <element signature="n#!!block;n#checkPaymentVerification#0;n#Checker#0" expanded="false" />
-            <element signature="e#3873#3903#0" expanded="false" />
-            <element signature="e#3923#4080#0" expanded="false" />
-            <element signature="n#!!doc;n#checkCountry#0;n#Checker#0" expanded="false" />
-            <element signature="n#!!block;n#checkCountry#0;n#Checker#0" expanded="false" />
-            <element signature="e#4310#4590#0" expanded="false" />
-            <element signature="e#4414#4583#0" expanded="false" />
-            <element signature="n#!!doc;n#checkFeedback#0;n#Checker#0" expanded="false" />
-            <element signature="n#!!block;n#checkFeedback#0;n#Checker#0" expanded="false" />
-            <element signature="e#4921#5050#0" expanded="false" />
-            <element signature="n#!!block;n#checkProject#0;n#Checker#0" expanded="false" />
-            <element signature="n#!!block;n#checkClient#0;n#Checker#0" expanded="false" />
-            <element signature="n#!!block;n#isSuitable#0;n#Checker#0" expanded="false" />
-            <element signature="n#!!block;n#check#0" expanded="false" />
-            <element signature="e#5490#5922#0" expanded="false" />
-            <element signature="e#5924#7466#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,9 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="e#14#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,36 +790,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/notifications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
-          <folding>
-            <element signature="e#471#545#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts.babel/background.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="129" column="4" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
-          <folding>
-            <element signature="e#2636#2705#0" expanded="true" />
-            <element signature="e#2863#2929#0" expanded="true" />
-            <element signature="e#3082#3146#0" expanded="true" />
-            <element signature="e#3841#3883#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -826,90 +805,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts.babel/popup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
-          <folding>
-            <element signature="e#14#66#0" expanded="true" />
-            <element signature="n#!!block;n#addWorkModeListeners#0" expanded="false" />
-            <element signature="n#!!block;n#addButtonListener#0" expanded="false" />
-            <element signature="n#!!block;n#checkAuthorization#0" expanded="false" />
-            <element signature="n#!!block;n#checkMode#0" expanded="false" />
-            <element signature="n#!!block;n#backgroundListeners#0" expanded="false" />
-            <element signature="n#!!block;n#debounce#0" expanded="false" />
-            <marker date="1467836633767" expanded="true" signature="444:634" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="157" column="21" selection-start-line="157" selection-start-column="21" selection-end-line="157" selection-end-column="21" />
-          <folding>
-            <element signature="e#10#42#0" expanded="false" />
-            <element signature="e#50#87#0" expanded="false" />
-            <element signature="e#95#156#0" expanded="false" />
-            <element signature="e#167#203#0" expanded="false" />
-            <element signature="e#214#275#0" expanded="false" />
-            <element signature="e#292#377#0" expanded="false" />
-            <element signature="e#391#410#0" expanded="false" />
-            <element signature="e#428#445#0" expanded="false" />
-            <element signature="e#458#462#0" expanded="false" />
-            <element signature="e#483#554#0" expanded="false" />
-            <element signature="e#578#628#0" expanded="false" />
-            <element signature="e#640#702#0" expanded="false" />
-            <element signature="e#713#733#0" expanded="false" />
-            <element signature="e#750#799#0" expanded="false" />
-            <element signature="e#816#858#0" expanded="false" />
-            <element signature="e#879#941#0" expanded="false" />
-            <element signature="e#968#1016#0" expanded="false" />
-            <element signature="e#1044#1145#0" expanded="false" />
-            <element signature="e#1173#1254#0" expanded="false" />
-            <element signature="e#1273#1322#0" expanded="false" />
-            <element signature="e#1343#1403#0" expanded="false" />
-            <element signature="e#1471#1534#0" expanded="false" />
-            <element signature="e#1561#1607#0" expanded="false" />
-            <element signature="e#1642#1702#0" expanded="false" />
-            <element signature="e#1722#1738#0" expanded="false" />
-            <element signature="e#1767#1782#0" expanded="false" />
-            <element signature="e#1804#1848#0" expanded="false" />
-            <element signature="e#1865#1869#0" expanded="false" />
-            <element signature="e#1884#1914#0" expanded="false" />
-            <element signature="e#1928#1948#0" expanded="false" />
-            <element signature="e#2273#2293#0" expanded="false" />
-            <element signature="e#2307#2369#0" expanded="false" />
-            <element signature="e#2459#2481#0" expanded="false" />
-            <element signature="e#2524#2561#0" expanded="false" />
-            <element signature="e#2579#2601#0" expanded="false" />
-            <element signature="e#2655#2676#0" expanded="false" />
-            <element signature="e#2710#2779#0" expanded="false" />
-            <element signature="e#2791#3889#0" expanded="false" />
-            <element signature="e#3903#4066#0" expanded="false" />
-            <element signature="e#4080#4251#0" expanded="false" />
-            <element signature="e#4265#4431#0" expanded="false" />
-            <element signature="e#4445#4616#0" expanded="false" />
-            <element signature="e#4630#4796#0" expanded="false" />
-            <element signature="e#4810#4981#0" expanded="false" />
-            <element signature="e#4995#5161#0" expanded="false" />
-            <element signature="e#5175#5347#0" expanded="false" />
-            <element signature="e#5351#5530#0" expanded="false" />
-            <element signature="e#5384#5451#0" expanded="false" />
-            <element signature="e#5459#5528#0" expanded="false" />
-            <element signature="e#5532#5720#0" expanded="false" />
-            <element signature="e#5568#5638#0" expanded="false" />
-            <element signature="e#5646#5718#0" expanded="false" />
-            <element signature="e#5722#5913#0" expanded="false" />
-            <element signature="e#5759#5830#0" expanded="false" />
-            <element signature="e#5838#5911#0" expanded="false" />
-            <element signature="e#5915#6118#0" expanded="false" />
-            <element signature="e#5956#6031#0" expanded="false" />
-            <element signature="e#6039#6116#0" expanded="false" />
-            <element signature="e#6120#6314#0" expanded="false" />
-            <element signature="e#6158#6230#0" expanded="false" />
-            <element signature="e#6238#6312#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -917,9 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="57" column="82" selection-start-line="57" selection-start-column="82" selection-end-line="57" selection-end-column="82" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -927,9 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3776">
           <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding>
-            <element signature="e#88#137#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -937,16 +830,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2186">
           <caret line="70" column="44" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="44" />
-          <folding>
-            <element signature="n#li#1;n#ul#2;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#2;n#ul#2;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/setDefaultParameters.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="68">
           <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
@@ -964,9 +853,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="493">
           <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts.babel/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding>
+            <element signature="e#15#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/launcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="37" column="80" selection-start-line="37" selection-start-column="80" selection-end-line="37" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts.babel/popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding>
+            <element signature="e#14#66#0" expanded="true" />
+            <element signature="n#!!block;n#fillList#0" expanded="false" />
+            <element signature="n#!!block;n#addWorkModeListeners#0" expanded="false" />
+            <element signature="n#!!block;n#addButtonListener#0" expanded="false" />
+            <element signature="n#!!block;n#checkAuthorization#0" expanded="false" />
+            <element signature="n#!!block;n#checkMode#0" expanded="false" />
+            <element signature="n#!!block;n#debounce#0" expanded="false" />
+            <marker date="1467924896124" expanded="true" signature="447:637" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts.babel/background/notifications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+          <folding>
+            <element signature="e#14#62#0" expanded="true" />
+            <element signature="e#471#542#0" expanded="true" />
+            <element signature="e#1144#1229#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

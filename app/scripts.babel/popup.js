@@ -44,7 +44,8 @@ function addButtonListener() {
 }
 
 function addJobListener() {
-  $('.collection-item').on('click', function(evt) {
+  $('.collection-item').off().on('click', function(evt) {
+    
     let projectId = $(this).attr('data-projectId');
 
     projectModel.setProjectAsOld(projectId);
@@ -82,11 +83,12 @@ function checkMode() {
 
 function backgroundListeners() {
   chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    if (request.message = 'newProject') {
+    if (request.message = 'newProject' && request.job) {
       let project = request.job;
       projectModel.projects.unshift(project);
       let html = getItemHTML(project);
       $('.collection').prepend(html);
+      addJobListener();
     }
   });
 }
