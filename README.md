@@ -1,6 +1,8 @@
 # Upwork Extension for Chrome browser
 
-Help to filter suitable projects
+Help to find appropriate projects and exclude unwanted.
+
+Project is written on ES6 javascript standart. So I used babel and browseryfy.
 
 ### Get started
 
@@ -11,11 +13,10 @@ git clone https://github.com/vorant/ChromeExtensionUpwork.git
 cd ChromeExtensionUpwork
 ```
 
-
 #### Install dependencies
 
 ```
-npm install`
+npm install
 bower instal
 ```
 
